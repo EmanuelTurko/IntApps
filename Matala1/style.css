@@ -1,0 +1,122 @@
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .container {
+    height: 30em;
+    position: relative;
+    margin: 0 auto;
+    border: 3px solid rgb(186, 211, 212);
+    padding: 10px;
+    background-color: #bdd5d8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgb(0, 0, 2);
+    background-color: #bdd5d8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    width: 20em;
+    height: 3em;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #7c3d3d !important;
+  }
+  
+  input[type="text"] {
+    display: inline-block;
+    vertical-align: middle;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: #95c9cf !important;
+    margin-right: -5px;
+  }
+  .button {
+    background-color: #070505;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+
+  li {
+    display:flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #444;
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  li button.delete {
+    background-color: #d9534f;
+  }
+  
+  li button.up {
+    background-color: #428bca;
+  }
+  
+  li button.down {
+    background-color: #428bca;
+  }
+  
+  li:first-child button.up {
+    display: none;
+  }
+  
+  li:last-child button.down {
+    display: none;
+  }
+  #task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}

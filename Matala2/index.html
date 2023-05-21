@@ -1,0 +1,53 @@
+<!--
+Emanuel Turko : ID : 206084378
+Hod Mitramy : ID : 211373287
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <script src="game.js" defer></script>
+    </head>
+    <body>
+        <div class="game">
+            <div class ="PlayerName">
+                <label for="player-name-input">Enter Player's Name:</label>
+                <input type="text" id="player-name-input" placeholder="enter name">
+            </div>
+            <div class="controls">
+                <select id="pairs-select">
+                    <option value="2">2 Pairs</option>
+                    <option value="4">4 Pairs</option>
+                    <option value="6">6 Pairs</option>
+                    <option value="8">8 Pairs</option>
+                    <option value="10">10 Pairs</option>
+                    <option value="12">12 Pairs</option>
+                    <option value="14">14 Pairs</option>
+                    <option value="16">16 Pairs</option>
+                    <option value="18">18 Pairs</option>
+                    <option value="20">20 Pairs</option>
+                    <option value="22">22 Pairs</option>
+                    <option value="24">24 Pairs</option>
+                    <option value="26">26 Pairs</option>
+                    <option value="28">28 Pairs</option>
+                    <option value="30">30 Pairs</option>
+                </select>
+                <button>Start</button>
+                <div class="stats">
+                    <div class="moves">0 moves</div>
+                    <div class="timer">time: 0 sec</div>
+                </div>
+            </div>
+            <div class="board-container">
+                <div class="board" data-dimension="2"></div>
+                <div class="win">You won!</div>
+            </div>
+        </div>
+    </body>
+</html>
